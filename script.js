@@ -145,5 +145,7 @@ function resetForm(){
  selected=[];
  document.querySelectorAll(".tag").forEach(t=>t.classList.remove("active"));
  document.getElementById("brandName").value="";
+ gsap.from(".hero-title", {y: 100, opacity: 0, duration: 1});
+gsap.from(".card", {opacity: 0, y: 50, stagger: 0.2});
  document.getElementById("price").innerText="0";
 }
